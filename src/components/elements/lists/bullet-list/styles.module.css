@@ -1,0 +1,23 @@
+.root {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  position: relative;
+  padding-left: 1rem;
+}
+.item::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: rgb(var(--rgb-primary));
+}
+.item + .item {
+  margin-top: 0.5rem;
+}

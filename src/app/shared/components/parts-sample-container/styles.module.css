@@ -1,0 +1,12 @@
+.root {
+  margin: 1.5rem 0;
+  padding: 40px;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--rgb-white));
+}
+.root > *:first-child {
+  margin-top: 0;
+}
+.root > *:last-child {
+  margin-bottom: 0;
+}

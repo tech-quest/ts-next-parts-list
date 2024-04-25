@@ -1,0 +1,21 @@
+.root {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.link {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: rgb(var(--rgb-white));
+  transition: background-color 0.3s ease-in-out;
+}
+.link:hover {
+  background-color: rgba(var(--rgb-white), 0.2);
+  font-weight: bold;
+}
+.link[data-active="true"] {
+  background-color: rgba(var(--rgb-white), 0.2);
+}

@@ -1,3 +1,4 @@
+import { DefaultMenu } from './default-menu';
 import styles from './styles.module.css';
 
 type Props = {
@@ -8,28 +9,24 @@ export const DefaultLayout = ({ children }: Props) => {
   return (
     <div className={styles.root}>
       <header className={styles.header}>
-        <div className={styles.logo}>Logo</div>
-        <nav>
-          <ul className={styles.menu}>
-            <li>
-              <a href="#" className={styles.link}>
-                メニュー1
-              </a>
-            </li>
-            <li>
-              <a href="#" className={styles.link}>
-                メニュー2
-              </a>
-            </li>
-          </ul>
+        <div className={styles.logo}>Parts List サンプル</div>
+        <nav className={styles.navigation}>
+          <DefaultMenu items={utilityLinks} />
+          <h2 className={styles.heading}>一般パーツ</h2>
+          <DefaultMenu items={elementLinks} />
         </nav>
       </header>
-      <main className={styles.main}>{children}</main>
-      <footer className={styles.footer}>
-        <div className={styles.copyright}>
-          Copyright © All Rights Reserved.
-        </div>
-      </footer>
+      <div className={styles.main}>
+        <main className={styles.contents}>{children}</main>
+        <footer className={styles.footer}>
+          <div className={styles.copyright}>
+            Copyright © All Rights Reserved.
+          </div>
+        </footer>
+      </div>
     </div>
   );
 };
+
+const utilityLinks = [{ href: '/', label: 'ホーム' }];
+const elementLinks = [{ href: '/typographies', label: 'テキスト系パーツ' }];

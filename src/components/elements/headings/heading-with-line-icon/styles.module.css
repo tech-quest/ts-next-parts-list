@@ -1,0 +1,36 @@
+.root {
+  position: relative;
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+.root::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 4px;
+  background-color: rgb(var(--rgb-primary));
+}
+
+/* MEMO: ---------------------------------------------
+アイコンの位置は 1 行目の上下中央とするため「1 行の高さ ÷ 2」を計算する
+※ 1行の高さ = font-size × line-height
+------------------------------------------------------ */
+.h1::before {
+  top: calc(var(--h1-font-size) * var(--heading-line-height) / 2);
+}
+.h2::before {
+  top: calc(var(--h2-font-size) * var(--heading-line-height) / 2);
+}
+.h3::before {
+  top: calc(var(--h3-font-size) * var(--heading-line-height) / 2);
+}
+.h4::before {
+  top: calc(var(--h4-font-size) * var(--heading-line-height) / 2);
+}
+.h5::before {
+  top: calc(var(--h5-font-size) * var(--heading-line-height) / 2);
+}
+.h6::before {
+  top: calc(var(--h6-font-size) * var(--heading-line-height) / 2);
+}

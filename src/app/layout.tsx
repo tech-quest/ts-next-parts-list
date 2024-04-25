@@ -1,11 +1,16 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
 import 'normalize.css';
 import './globals.css';
-import { DefaultLayout } from './components/default-layout';
 
-const inter = Inter({ subsets: ['latin'] });
+import { DefaultLayout } from './components/default-layout';
+import { Noto_Sans_JP } from 'next/font/google';
+
+const noto = Noto_Sans_JP({
+  weight: ['400', '600'],
+  style: 'normal',
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={noto.className}>
         <DefaultLayout>{children}</DefaultLayout>
       </body>
     </html>

@@ -1,0 +1,11 @@
+.root {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid rgb(var(--rgb-primary));
+}
+.root > *:first-child {
+  margin-top: 0;
+}
+.root > *:last-child {
+  margin-bottom: 0;
+}
