@@ -52,7 +52,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  background-color: #ECEFF1;
+  background-color: rgb(var(--rgb-light-gray));
 }
 .contents {
   padding: 2rem;

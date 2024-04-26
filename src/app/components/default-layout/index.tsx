@@ -29,4 +29,8 @@ export const DefaultLayout = ({ children }: Props) => {
 };
 
 const utilityLinks = [{ href: '/', label: 'ホーム' }];
-const elementLinks = [{ href: '/typographies', label: 'テキスト系パーツ' }];
+const elementLinks = [
+  { href: '/typography-parts', label: 'テキスト系パーツ' },
+  { href: '/action-parts', label: 'アクション系パーツ' },
+  { href: '/misc-parts', label: 'その他一般パーツ' },
+];

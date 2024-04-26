@@ -1,6 +1,8 @@
 :root {
   --rgb-white: 255,255,255;
   --rgb-black: 51,51,51;
+  --rgb-gray: 144,164,174;
+  --rgb-light-gray: 236,239,241;
   --rgb-primary: 0,150,136;
   --rgb-error: 211,47,47;
   --rgb-warning: 255,214,0;
@@ -21,6 +23,14 @@
 
 body {
   height: 100%;
-  color: #333;
+  color: rgb(var(--rgb-black));
   line-height: 1.5;
+}
+input,
+select,
+textarea,
+button {
+  color: rgb(var(--rgb-black));
+  font-size: 1rem;
+  line-height: inherit;
 }

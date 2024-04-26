@@ -10,7 +10,7 @@ import { NumberList } from '@/components/elements/lists/number-list';
 import { LeadText } from '@/components/elements/typographies/lead-text';
 import { AlertMessage } from '@/components/elements/typographies/alert-message';
 
-export default function TypographiesRoute() {
+export default function TypographyPartsPage() {
   return (
     <PageContainer>
       <h1>テキスト系パーツ</h1>
@@ -45,6 +45,7 @@ export default function TypographiesRoute() {
           <Heading variant="h6" value="H6 見出し" />
         </PartsSampleContainer>
       </section>
+
       <section>
         <h2>下線付き見出し</h2>
         <PartsSampleContainer>
@@ -60,6 +61,7 @@ export default function TypographiesRoute() {
           <HeadingWithUnderline variant="h6" value="H6 見出し" />
         </PartsSampleContainer>
       </section>
+
       <section>
         <h2>左線付きテキスト</h2>
         <PartsSampleContainer>
@@ -75,6 +77,7 @@ export default function TypographiesRoute() {
           <HeadingWithLeftLine variant="h6" value="H6 見出し" />
         </PartsSampleContainer>
       </section>
+
       <section>
         <h2>線形アイコン付き見出し</h2>
         <PartsSampleContainer>
@@ -90,6 +93,7 @@ export default function TypographiesRoute() {
           <HeadingWithLineIcon variant="h6" value="H6 見出し" />
         </PartsSampleContainer>
       </section>
+
       <section>
         <h2>短下線付き見出し</h2>
         <PartsSampleContainer>
@@ -105,6 +109,7 @@ export default function TypographiesRoute() {
           <HeadingWithShortUnderline variant="h6" value="H6 見出し" />
         </PartsSampleContainer>
       </section>
+
       <section>
         <h2>リードテキスト</h2>
         <PartsSampleContainer>
@@ -112,6 +117,7 @@ export default function TypographiesRoute() {
           <LeadText value="文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト" />
         </PartsSampleContainer>
       </section>
+
       <section>
         <h2>アラートメッセージ</h2>
         <PartsSampleContainer>
@@ -123,6 +129,7 @@ export default function TypographiesRoute() {
           <AlertMessage color="warning" message="警告メッセージ" />
         </PartsSampleContainer>
       </section>
+
       <section>
         <h2>箇条書きリスト</h2>
         <PartsSampleContainer>
@@ -136,6 +143,7 @@ export default function TypographiesRoute() {
           />
         </PartsSampleContainer>
       </section>
+
       <section>
         <h2>数字付き順序リスト</h2>
         <PartsSampleContainer>
