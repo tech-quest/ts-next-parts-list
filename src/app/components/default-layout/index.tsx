@@ -11,9 +11,7 @@ export const DefaultLayout = ({ children }: Props) => {
       <header className={styles.header}>
         <div className={styles.logo}>Parts List サンプル</div>
         <nav className={styles.navigation}>
-          <DefaultMenu items={utilityLinks} />
-          <h2 className={styles.heading}>一般パーツ</h2>
-          <DefaultMenu items={elementLinks} />
+          <DefaultMenu items={links} />
         </nav>
       </header>
       <div className={styles.main}>
@@ -28,9 +26,10 @@ export const DefaultLayout = ({ children }: Props) => {
   );
 };
 
-const utilityLinks = [{ href: '/', label: 'ホーム' }];
-const elementLinks = [
+const links = [
+  { href: '/', label: 'ホーム' },
   { href: '/typography-parts', label: 'テキスト系パーツ' },
   { href: '/action-parts', label: 'アクション系パーツ' },
+  { href: '/container-parts', label: 'コンテナ系パーツ' },
   { href: '/misc-parts', label: 'その他一般パーツ' },
 ];

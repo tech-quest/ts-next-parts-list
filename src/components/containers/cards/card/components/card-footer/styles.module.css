@@ -1,0 +1,10 @@
+.root {
+  padding: 1rem;
+  border-top: 1px solid rgb(var(--rgb-light-gray));
+}
+.root > *:first-child {
+  margin-top: 0;
+}
+.root > *:last-child {
+  margin-bottom: 0;
+}
