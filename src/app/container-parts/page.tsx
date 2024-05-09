@@ -8,6 +8,7 @@ import { Panel } from '@/components/containers/panels/panel';
 import { TextField } from '@/components/forms/texts/text-field';
 import { Accordion } from '@/components/containers/accordions/accordion';
 import { RowGrid } from '@/components/containers/grids/row-grid';
+import { DataTable } from '@/components/containers/tables/data-table';
 
 export default function ActionPartsPage() {
   return (
@@ -291,6 +292,82 @@ export default function ActionPartsPage() {
               </Card.Body>
             </Card>
           </RowGrid>
+        </PartsSampleContainer>
+      </section>
+
+      <section>
+        <h2>アコーディオン</h2>
+        <PartsSampleContainer>
+          <DataTable
+            bodyRows={
+              <>
+                <tr>
+                  <th>テーブルのタイプ</th>
+                  <td>横基点のテーブル</td>
+                </tr>
+                <tr>
+                  <th>借り手</th>
+                  <td>山田太郎</td>
+                </tr>
+                <tr>
+                  <th>書籍名</th>
+                  <td>人間失格</td>
+                </tr>
+              </>
+            }
+          ></DataTable>
+
+          <DataTable
+            headRows={
+              <tr>
+                <th>テーブルのタイプ</th>
+                <th>借り手</th>
+                <th>書籍名</th>
+              </tr>
+            }
+            bodyRows={
+              <>
+                <tr>
+                  <td>縦基点のテーブル</td>
+                  <td>山田太郎</td>
+                  <td>人間失格</td>
+                </tr>
+                <tr>
+                  <td>縦基点のテーブル</td>
+                  <td>山田花子</td>
+                  <td>吾輩は猫である</td>
+                </tr>
+              </>
+            }
+          ></DataTable>
+
+          <DataTable
+            colgroup={
+              <colgroup>
+                <col style={{ width: '30%' }} />
+                <col style={{ width: '70%' }} />
+              </colgroup>
+            }
+            bodyRows={
+              <>
+                <tr>
+                  <th>幅の指定方法</th>
+                  <td>
+                    col
+                    タグに対して横幅を指定することで幅の比率などを指定することもできます。
+                  </td>
+                </tr>
+                <tr>
+                  <th>借り手</th>
+                  <td>山田太郎</td>
+                </tr>
+                <tr>
+                  <th>書籍名</th>
+                  <td>人間失格</td>
+                </tr>
+              </>
+            }
+          ></DataTable>
         </PartsSampleContainer>
       </section>
     </PageContainer>
