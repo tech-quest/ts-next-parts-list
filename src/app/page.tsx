@@ -1,4 +1,6 @@
+'use client';
 import { PageContainer } from './shared/components/page-container';
+import { links } from './components/default-layout';
 
 export default function Home() {
   return (
@@ -13,6 +15,13 @@ export default function Home() {
         サイト向けのパーツになりますが、CSSの基本を抑えていくことで Web
         アプリケーション向けのパーツも作成できるようになります。
       </p>
+      <ul>
+        {links.map((link) => (
+          <li key={link.href}>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
     </PageContainer>
   );
 }

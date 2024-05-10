@@ -27,7 +27,7 @@ export const DefaultLayout = ({ children }: Props) => {
             <i className={styles.hamburger} />
           </button>
           <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
-            <DefaultMenu items={links} />
+            <DefaultMenu items={[{ href: '/', label: 'ホーム' }, ...links]} />
           </div>
         </nav>
       </header>
@@ -43,8 +43,7 @@ export const DefaultLayout = ({ children }: Props) => {
   );
 };
 
-const links = [
-  { href: '/', label: 'ホーム' },
+export const links = [
   { href: '/typography-parts', label: 'テキスト系パーツ' },
   { href: '/action-parts', label: 'アクション系パーツ' },
   { href: '/container-parts', label: 'コンテナ系パーツ' },

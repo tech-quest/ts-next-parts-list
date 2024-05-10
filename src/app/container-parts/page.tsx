@@ -296,7 +296,7 @@ export default function ActionPartsPage() {
       </section>
 
       <section>
-        <h2>アコーディオン</h2>
+        <h2>テーブル</h2>
         <PartsSampleContainer>
           <DataTable
             bodyRows={
