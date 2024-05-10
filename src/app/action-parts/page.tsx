@@ -1,11 +1,5 @@
 import { PageContainer } from '@/app/shared/components/page-container';
 import { PartsSampleContainer } from '@/app/shared/components/parts-sample-container';
-import { Button } from '@/components/elements/buttons/button';
-import { CheckboxField } from '@/components/forms/selections/checkbox-field';
-import { PulldownField } from '@/components/forms/selections/pulldown-field';
-import { RadioField } from '@/components/forms/selections/radio-field';
-import { TextField } from '@/components/forms/texts/text-field';
-import { TextareaField } from '@/components/forms/texts/textarea-field';
 
 export default function ActionPartsPage() {
   return (
@@ -44,123 +38,42 @@ export default function ActionPartsPage() {
       <section>
         <h2>ボタン</h2>
         <PartsSampleContainer>
-          <Button type="button" value="ボタンパターン" />
-          <Button type="button" value="ボタン (disabled) パターン" isDisabled />
-          <Button type="link" href="/" value="リンクパターン" />
-          <Button
-            type="link"
-            href="https://tech-quest.club/"
-            value="別タブリンクパターン"
-            target="_blank"
-          />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>テキスト入力</h2>
         <PartsSampleContainer>
-          <TextField type="text" name="text-field" />
-          <TextField type="password" name="password-field" />
-          <TextField type="email" name="email-field" />
-          <TextField type="text" name="disabled-text-field" disabled />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>テキスト入力 (複数行)</h2>
         <PartsSampleContainer>
-          <TextareaField name="textarea-field" />
-          <TextareaField name="disabled-textarea-field" disabled />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>プルダウン</h2>
         <PartsSampleContainer>
-          <PulldownField
-            name="pulldown-field"
-            items={[
-              { value: '', label: '選択してください' },
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-          />
-          <PulldownField
-            name="selected-pulldown-field"
-            defaultValue="apple"
-            items={[
-              { value: '', label: '選択してください' },
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-          />
-          <PulldownField
-            name="disabled-pulldown-field"
-            items={[
-              { value: '', label: '選択してください' },
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-            disabled
-          />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>ラジオボタン</h2>
         <PartsSampleContainer>
-          <RadioField
-            name="radio-field"
-            items={[
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-          />
-          <RadioField
-            name="selected-radio-field"
-            defaultValue="apple"
-            items={[
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-          />
-          <RadioField
-            name="disabled-radio-field"
-            items={[
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-            disabled
-          />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>チェックボックス</h2>
         <PartsSampleContainer>
-          <CheckboxField
-            name="checkbox-field"
-            items={[
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-          />
-          <CheckboxField
-            name="selected-checkbox-field"
-            defaultValue="apple"
-            items={[
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-          />
-          <CheckboxField
-            name="disabled-checkbox-field"
-            items={[
-              { value: 'apple', label: 'りんご' },
-              { value: 'banana', label: 'バナナ' },
-            ]}
-            disabled
-          />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
     </PageContainer>

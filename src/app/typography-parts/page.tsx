@@ -1,14 +1,5 @@
 import { PageContainer } from '@/app/shared/components/page-container';
 import { PartsSampleContainer } from '@/app/shared/components/parts-sample-container';
-import { Heading } from '@/components/elements/headings/heading';
-import { HeadingWithUnderline } from '@/components/elements/headings/heading-with-underline';
-import { HeadingWithLeftLine } from '@/components/elements/headings/heading-with-left-line';
-import { HeadingWithLineIcon } from '@/components/elements/headings/heading-with-line-icon';
-import { HeadingWithShortUnderline } from '@/components/elements/headings/heading-with-short-underline';
-import { BulletList } from '@/components/elements/lists/bullet-list';
-import { NumberList } from '@/components/elements/lists/number-list';
-import { LeadText } from '@/components/elements/typographies/lead-text';
-import { AlertMessage } from '@/components/elements/typographies/alert-message';
 
 export default function TypographyPartsPage() {
   return (
@@ -37,124 +28,63 @@ export default function TypographyPartsPage() {
       <section>
         <h2>通常見出し</h2>
         <PartsSampleContainer>
-          <Heading variant="h1" value="H1 見出し" />
-          <Heading variant="h2" value="H2 見出し" />
-          <Heading variant="h3" value="H3 見出し" />
-          <Heading variant="h4" value="H4 見出し" />
-          <Heading variant="h5" value="H5 見出し" />
-          <Heading variant="h6" value="H6 見出し" />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>下線付き見出し</h2>
         <PartsSampleContainer>
-          <HeadingWithUnderline variant="h1" value="H1 見出し" />
-          <HeadingWithUnderline
-            variant="h1"
-            value="文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト"
-          />
-          <HeadingWithUnderline variant="h2" value="H2 見出し" />
-          <HeadingWithUnderline variant="h3" value="H3 見出し" />
-          <HeadingWithUnderline variant="h4" value="H4 見出し" />
-          <HeadingWithUnderline variant="h5" value="H5 見出し" />
-          <HeadingWithUnderline variant="h6" value="H6 見出し" />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>左線付きテキスト</h2>
         <PartsSampleContainer>
-          <HeadingWithLeftLine variant="h1" value="H1 見出し" />
-          <HeadingWithLeftLine
-            variant="h1"
-            value="文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト"
-          />
-          <HeadingWithLeftLine variant="h2" value="H2 見出し" />
-          <HeadingWithLeftLine variant="h3" value="H3 見出し" />
-          <HeadingWithLeftLine variant="h4" value="H4 見出し" />
-          <HeadingWithLeftLine variant="h5" value="H5 見出し" />
-          <HeadingWithLeftLine variant="h6" value="H6 見出し" />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>線形アイコン付き見出し</h2>
         <PartsSampleContainer>
-          <HeadingWithLineIcon variant="h1" value="H1 見出し" />
-          <HeadingWithLineIcon
-            variant="h1"
-            value="文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト"
-          />
-          <HeadingWithLineIcon variant="h2" value="H2 見出し" />
-          <HeadingWithLineIcon variant="h3" value="H3 見出し" />
-          <HeadingWithLineIcon variant="h4" value="H4 見出し" />
-          <HeadingWithLineIcon variant="h5" value="H5 見出し" />
-          <HeadingWithLineIcon variant="h6" value="H6 見出し" />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>短下線付き見出し</h2>
         <PartsSampleContainer>
-          <HeadingWithShortUnderline variant="h1" value="H1 見出し" />
-          <HeadingWithShortUnderline
-            variant="h1"
-            value="文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト"
-          />
-          <HeadingWithShortUnderline variant="h2" value="H2 見出し" />
-          <HeadingWithShortUnderline variant="h3" value="H3 見出し" />
-          <HeadingWithShortUnderline variant="h4" value="H4 見出し" />
-          <HeadingWithShortUnderline variant="h5" value="H5 見出し" />
-          <HeadingWithShortUnderline variant="h6" value="H6 見出し" />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>リードテキスト</h2>
         <PartsSampleContainer>
-          <LeadText value="リードテキスト" />
-          <LeadText value="文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト" />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>アラートメッセージ</h2>
         <PartsSampleContainer>
-          <AlertMessage color="error" message="エラーメッセージ" />
-          <AlertMessage
-            color="error"
-            message="文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト"
-          />
-          <AlertMessage color="warning" message="警告メッセージ" />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>箇条書きリスト</h2>
         <PartsSampleContainer>
-          <BulletList
-            values={[
-              '箇条書きリスト',
-              '文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト',
-              '箇条書きリスト',
-              '箇条書きリスト',
-            ]}
-          />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
 
       <section>
         <h2>数字付き順序リスト</h2>
         <PartsSampleContainer>
-          <NumberList
-            values={[
-              '数字付き順序リスト',
-              '文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト文量テスト',
-              '数字付き順序リスト',
-              '数字付き順序リスト',
-            ]}
-          />
+          ここに作成したコンポーネントを記述
         </PartsSampleContainer>
       </section>
     </PageContainer>
